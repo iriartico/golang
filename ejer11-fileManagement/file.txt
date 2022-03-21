@@ -1,0 +1,4 @@
+
+Hello world
+Bienvenido a la clase de manejo de archivos
+asdf
