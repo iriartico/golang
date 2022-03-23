@@ -1,0 +1,15 @@
+package main
+
+import (
+	"net/http"
+)
+
+func main()  {
+	http.HandleFunc("/", home)
+	// http.HandleFunc("/login", login)
+	http.ListenAndServe(":3000", nil)
+}
+
+func home(w http.ResponseWriter, r *http.Request)  {
+	http.ServeFile(w,r, "./index.html")
+}
